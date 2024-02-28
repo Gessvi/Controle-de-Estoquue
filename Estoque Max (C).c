@@ -13,29 +13,29 @@ printf ("Digite o nome do item desejado: \n");
 scanf ("%s", &item);
 system ("cls || clear");
 
-printf("---VALOR MÉDIA DIÁRIA---\n");
-printf ("Qual o valor do Mês 1: ");
+printf("---VALOR MÃ‰DIA DIÃRIA---\n");
+printf ("Qual o valor do MÃªs 1: ");
 scanf("%f", &m1);
 
 
-printf ("Qual o valor do Mês 2: \n");
+printf ("Qual o valor do MÃªs 2: \n");
 scanf("%f", &m2);
 
-printf ("Qual o valor do Mês 3: \n");
+printf ("Qual o valor do MÃªs 3: \n");
 scanf("%f" ,&m3);
 system ("cls || clear");
 
 
-printf ("--ESTOQUE MINÍMO-- \n");
-printf ("Insira o Tempo de Reposicão: \n");
+printf ("--ESTOQUE MINÃMO-- \n");
+printf ("Insira o Tempo de ReposicÃ£o: \n");
 scanf("%f", & tr);
 ;
-printf ("-- ESTOQUE MÁXIMO-- \n");
-printf("insira o Estoque Máximo: \n");
+printf ("-- ESTOQUE MÃXIMO-- \n");
+printf("insira o Estoque MÃ¡ximo: \n");
 scanf ("%f", &emax);
 system ("cls || clear");
 
-printf ("-- TOMADA DE DECISÃOI --\n");
+printf ("-- TOMADA DE DECISÃƒOI --\n");
 printf ("Insira o Estoque Atual: \n");
 scanf ("%f",&ea);
 system ("cls || clear");
@@ -55,24 +55,24 @@ printf ("Nome do Produto: \n", item);
 
 printf("------------------------------------------\n");
 vmd = (m1+m2+m3)/3/25;
-printf("Valor Média Diaria = " ,vmd);
+printf("Valor MÃ©dia Diaria = " ,vmd);
 
 printf("------------------------------------------\n");
-printf ("--ESTOQUE MINÍMO-- \n");
+printf ("--ESTOQUE MINÃMO-- \n");
 emin = (tr * vmd);
-printf ("Estoque Minímo = " ,emin);
+printf ("Estoque MinÃ­mo = " ,emin);
 
 printf("------------------------------------------\n");
-printf ("--ESTOQUE MÁXIMO--\n");
+printf ("--ESTOQUE MÃXIMO--\n");
 emax = (lr + emin);
-printf ("Estoque Máximo = " ,emax);
+printf ("Estoque MÃ¡ximo = " ,emax);
 
 printf("------------------------------------------\n");
-printf ("-- TOMADA DE DECISÃO --\n");
+printf ("-- TOMADA DE DECISÃƒO --\n");
 
 if (ea > emin) {
 
-printf ("\n\t-Não Comprar-\n");
+printf ("\n\t-NÃ£o Comprar-\n");
 
 }else {
 
